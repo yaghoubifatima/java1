@@ -1,0 +1,22 @@
+/* 7)Vedrəni su ilə doldurub küçəyə qoydular. Küçədə havanın temperaturu  dərəcədir. 
+Əgər  müsbətdirsə, Water, əks halda Ice çap edin;  sıfır və ya mənfidirsə, Ice çap edin.
+Giriş: 3 -> Cavab: Water
+Giriş: -6 -> Cavab: Ice */
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int temperature = input.nextInt();
+
+        if (temperature > 0) {
+            System.out.println("Water");
+        } else {
+            System.out.println("Ice");
+        }
+
+    }
+}
