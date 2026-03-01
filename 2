@@ -1,0 +1,24 @@
+/* 2) Verilmiş  ədədinə görə növbəti şərtlərdən heç olmazsa biri doğrudursa "YES", 
+əks halda "NO" çap edin.
+•	 ədədi təkdir;
+•	 ədədi müsbətdir və üçrəqəmlidir.
+Giriş 7 -> Cavab : YES
+Giriş 8 ->Cavab NO */
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+
+        if (n % 2 != 0 || (n > 0 && n >= 100 && n <= 999)) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+
+    }
+}
