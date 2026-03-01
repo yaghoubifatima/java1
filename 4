@@ -1,0 +1,21 @@
+/* 4) n natural ədədi verilmişdir.  rəqəmli natural ədədlərin sayını çap edin.
+Giriş:1 -> Cavab 9 */
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+
+        int count = 1;
+        for (int i = 1; i < n; i++) {
+            count *= 10;
+        }
+        count *= 9;
+
+        System.out.println(count);
+    }
+}
