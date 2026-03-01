@@ -1,0 +1,24 @@
+/* 1)	Verilmiş  ədədinə görə növbəti şərtlərdən heç biri doğru deyilsə "YES",
+ əks halda "NO" çap edin.
+•	 ədədi cütdür və müsbətdir;
+•	 ədədi təkdir və mənfidir.
+Giriş 7 -> Cavab : YES
+Giriş 24 ->Cavab NO */
+ 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+
+        if ((n % 2 == 0 && n > 0) || (n % 2 != 0 && n < 0)) {
+            System.out.println("NO");
+        } else {
+            System.out.println("YES");
+        }
+
+    }
+}
