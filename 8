@@ -1,0 +1,25 @@
+import java.util.Scanner;
+/* 7) İki tam ədəd  və  verilir. a-dan b-yə qədər bütün tam ədədlərin kvadratlarını və kublarını çap edin.
+Giriş: 5 10 -> 
+Cavab: 25 36 49 64 81 100 
+125 216 343 512 729 1000 */
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+
+        for (int i = a; i <= b; i++) {
+            System.out.print(i * i + " ");
+        }
+        System.out.println();
+
+        for (int i = a; i <= b; i++) {
+            System.out.print(i * i * i + " ");
+        }
+        System.out.println();
+    }
+}
