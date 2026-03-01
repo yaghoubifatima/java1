@@ -1,0 +1,24 @@
+/* 3) Verilmiş  ədədinə görə növbəti şərtlərdən yalnız biri doğrudursa "YES", 
+əks halda "NO" çap edin.
+•	 ədədi cütdür;
+•	 ədədi mənfidir və üçə tam bölünür.
+Giriş 22 -> Cavab : YES
+Giriş 7 ->Cavab NO */
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+
+        if ((n % 2 == 0) ^ (n < 0 && n % 3 == 0)) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+
+    }
+}
